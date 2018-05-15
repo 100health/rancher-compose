@@ -55,6 +55,7 @@ type ServiceConfigV1 struct {
 	MemLimit          yaml.StringorInt     `yaml:"mem_limit,omitempty"`
 	MemSwapLimit      yaml.StringorInt     `yaml:"memswap_limit,omitempty"`
 	MemSwappiness     yaml.StringorInt     `yaml:"mem_swappiness,omitempty"`
+        MilliCpuReservation yaml.StringorInt   `yaml:"milli_cpu_reservation,omitempty"`
 	Name              string               `yaml:"name,omitempty"`
 	Net               string               `yaml:"net,omitempty"`
 	OomKillDisable    bool                 `yaml:"oom_kill_disable,omitempty"`
@@ -134,6 +135,7 @@ type ServiceConfig struct {
 	MemReservation    yaml.StringorInt     `yaml:"mem_reservation,omitempty"`
 	MemSwapLimit      yaml.StringorInt     `yaml:"memswap_limit,omitempty"`
 	MemSwappiness     yaml.StringorInt     `yaml:"mem_swappiness,omitempty"`
+        MilliCpuReservation yaml.StringorInt         `yaml:"milli_cpu_reservation,omitempty"`
 	NetworkMode       string               `yaml:"network_mode,omitempty"`
 	Networks          *yaml.Networks       `yaml:"networks,omitempty"`
 	OomKillDisable    bool                 `yaml:"oom_kill_disable,omitempty"`
